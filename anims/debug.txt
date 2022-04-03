@@ -1,0 +1,87 @@
+====================================================================
+class Mammal {
+
+  private int heartRate; 
+  private int respirationRate; 
+  private String bloodGroup; 
+
+  static int eyes = 2;
+  string foodType; 
+  Int chewTime; 
+
+  Mammal () { 
+    System.out.println("I am an Animal");
+  }
+
+  public setHeartRate (int heartRate) { 
+    this.heartRate = heartRate; 
+  }
+
+  public setRespirationRate (int respirationRate) { 
+    this.respirationRate = respirationRate; 
+  }
+
+  public setBloodGroup (String bloodGroup) { 
+    this.bloodGroup = bloodGroup; 
+  }
+
+  int getHeartRate() {
+    return heartRate;
+  }
+
+  int getRespirationRate() {
+    return respirationRate;
+  }
+  
+  String getBloodGroup() {
+    return bloodGroup;
+  } 
+
+  public String eat_method (String foodType, String chewType, int chewTime) { 
+    System.out.println("I eat "+ foodType+ " by " + chewType + "for "+ chewTime +" minutes");
+  }
+  
+}
+====================================================================
+class Cow extends Mammal {
+  
+  int chewCycles; 
+  
+  Cow () { 
+    System.out.println(" ... and also a Cow! ");
+  }
+
+  private string eat_method (String foodType, String chewType, int chewTime, int chewCycles) { 
+    String response = "I eat "+ foodType+ " by " + chewType + "for "+ chewTime + " in " + chewCycles);
+    return response; 
+  }
+
+}
+====================================================================
+// inherit from 
+class Dog extends Mammal {
+
+  Dog () { 
+    System.out.println(" ... and also a Dog! ");
+  }
+
+  protected string eat_method (String foodType, String chewType, int chewTime) { 
+    String response = "I swallow "+ foodType+ " without chewing!";
+    return response; 
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+====================================================================
+    Cow freshian = new Cow(); 
+
+    freshian.heartrate = 72; 
+    freshian.respiration_rate = 100; 
+    freshian.blood_group = "A";
+
+    System.out.println("Heart Rate " + freshian.heartrate);
+    System.out.println("Heart Rate " + freshian.respiration_rate);
+    System.out.println("Heart Rate " + freshian.blood_group);
+  }
+}
