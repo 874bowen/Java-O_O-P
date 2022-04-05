@@ -1,0 +1,3 @@
+interface Mammal{
+	void giveBirth();
+}
